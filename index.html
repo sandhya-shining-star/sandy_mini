@@ -1,0 +1,193 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Nursery Plant Ordering</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1><i class="fas fa-leaf"></i> GreenLeaf Nursery</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#products"><i class="fas fa-seedling"></i> Products</a></li>
+                <li><a href="#cart"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                <li><a href="#container"><i class="fas fa-user"></i> Register</a></li>
+                <a href="register.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="banner">
+        <h2>Welcome to GreenLeaf Nursery</h2>
+        <p style="color:#000 ;">Your one-stop shop for healthy, beautiful plants!</p>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Our Plants</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://images.pexels.com/photos/3094208/pexels-photo-3094208.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Plant 1">
+                <h3>Fiddle Leaf Fig</h3>
+                <p>Price: $20</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://images.pexels.com/photos/1974508/pexels-photo-1974508.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Plant 2">
+                <h3>Snake Plant</h3>
+                <p>Price: $15</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://images.pexels.com/photos/1383044/pexels-photo-1383044.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Plant 3">
+                <h3>Peace Lily</h3>
+                <p>Price: $18</p>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart" class="cart">
+        <h2>Your Cart</h2>
+        <ul class="cart-items">
+            <li>No items added yet!</li>
+        </ul>
+    </section>
+
+     <style>
+     
+        .container {
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 600px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1; /* Allow the container to grow and take up space */
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .box {
+            position: relative;
+            margin: 20px 0;
+        }
+        .box input {
+            width: 100%;
+            padding: 10px;
+            background: none;
+            border: none;
+            border-bottom: 2px solid #000;
+            outline: none;
+            color: #000;
+            font-size: 18px;
+        }
+        .box span {
+            position: absolute;
+            left: 0;
+            padding: 10px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: #000;
+        }
+        .box input:focus ~ span,
+        .box input:valid ~ span {
+            transform: translateY(-20px);
+            font-size: 12px;
+            color: #000;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #000;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #333;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .social-icons img {
+            width: 24px;
+        }
+        .social-icons a:hover img {
+            opacity: 0.7;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div  id="container" class="container">
+        <h2>User Registration</h2>
+        <div class="box">
+            <input type="text" required="required">
+            <span>First Name</span>
+        </div>
+        <div class="box">
+            <input type="text" required="required">
+            <span>Last Name</span>
+        </div>
+        <div class="box">
+            <input type="text" required="required">
+            <span>Email Id</span>
+        </div>
+        <div class="box">
+            <input type="text" required="required">
+            <span>Pincode</span>
+        </div>
+        <div class="box">
+            <input type="text" required="required">
+            <span>Address</span>
+        </div>
+        <button type="submit">Submit</button>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div>Sandhya Reddy</div>
+            <div class="social-icons">
+                <a href="#"><img src="https://www.linkedin.com/favicon.ico" alt="LinkedIn"></a>
+                <a href="#"><img src="https://github.com/favicon.ico" alt="GitHub"></a>
+                <a href="#"><img src="https://twitter.com/favicon.ico" alt="Twitter"></a>
+                <a href="#"><img src="https://www.youtube.com/favicon.ico" alt="YouTube"></a>
+            
+            </div>
+            <p>Made by SHINING STAR &copy; 2021</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+</body>
+</html>
+
+ 
